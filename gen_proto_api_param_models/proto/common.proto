@@ -1,0 +1,106 @@
+syntax = 'proto3';
+option go_package="./zero";
+package pb;
+
+message OrderUnit {
+		int64 id =1;
+		string orderSn =2;
+		int64 shopId =3;
+		int64 platform =4;
+		string status =5;
+		string subStatus =6;
+		float totalAmount =7;
+		float itemAmount =8;
+		float shippingFee =9;
+		float discountAmount =10;
+		string currency =11;
+		string buyerId =12;
+		string receiverName =13;
+		string receiverPhone =14;
+		string receiverAddress =15;
+		int64 orderCreatedAt =16;
+		int64 paidAt =17;
+		int64 shipDeadlineAt =18;
+		int64 shippedAt =19;
+		int64 completedAt =20;
+		int64 cancelledAt =21;
+		int64 lastStatusChangeAt =22;
+		string cancelReason =23;
+		string returnSn =24;
+		string refundStatus =25;
+		float refundAmount =26;
+		string refundReason =27;
+		string shippingCarrier =28;
+		string trackingNo =29;
+		string shippingStatus =30;
+		string extRaw =31;
+}
+////////////////////////////////////////////
+message OrderRecordUnit {
+		int64 id =1;
+		string orderSn =2;
+		int64 shopId =3;
+		int64 platform =4;
+		string status =5;
+		string subStatus =6;
+		float totalAmount =7;
+		float itemAmount =8;
+		float shippingFee =9;
+		float discountAmount =10;
+		string currency =11;
+		string buyerId =12;
+		string receiverName =13;
+		string receiverPhone =14;
+		string receiverAddress =15;
+		int64 orderCreatedAt =16;
+		int64 paidAt =17;
+		int64 shipDeadlineAt =18;
+		int64 shippedAt =19;
+		int64 completedAt =20;
+		int64 cancelledAt =21;
+		int64 lastStatusChangeAt =22;
+		string cancelReason =23;
+		string returnSn =24;
+		string refundStatus =25;
+		float refundAmount =26;
+		string refundReason =27;
+		string shippingCarrier =28;
+		string trackingNo =29;
+		string shippingStatus =30;
+		string extRaw =31;
+}
+////////////////////////////////////////////
+message OrderSrcUnit {
+		int64 id =1;
+		string orderSn =2;
+		int64 shopId =3;
+		int64 platform =4;
+		string status =5;
+		string subStatus =6;
+		float totalAmount =7;
+		float itemAmount =8;
+		float shippingFee =9;
+		float discountAmount =10;
+		string currency =11;
+		string buyerId =12;
+		string receiverName =13;
+		string receiverPhone =14;
+		string receiverAddress =15;
+		int64 orderCreatedAt =16;
+		int64 paidAt =17;
+		int64 shipDeadlineAt =18;
+		int64 shippedAt =19;
+		int64 completedAt =20;
+		int64 cancelledAt =21;
+		int64 lastStatusChangeAt =22;
+		string cancelReason =23;
+		string returnSn =24;
+		string refundStatus =25;
+		float refundAmount =26;
+		string refundReason =27;
+		string shippingCarrier =28;
+		string trackingNo =29;
+		string shippingStatus =30;
+		string extRaw =31;
+}
+////////////////////////////////////////////

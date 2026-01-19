@@ -1,0 +1,118 @@
+syntax = "v1"
+
+info ( 
+	title: ""
+	author: ""
+)
+//import "desc/order.api"
+//import "desc/order_record.api"
+//import "desc/order_src.api"
+
+type (
+	OrderUnit {
+		Id int64 `json:"id,optional"`
+		OrderSn string `json:"orderSn"`
+		ShopId int64 `json:"shopId"`
+		Platform int64 `json:"platform"`
+		Status string `json:"status"`
+		SubStatus string `json:"subStatus"`
+		TotalAmount float32 `json:"totalAmount"`
+		ItemAmount float32 `json:"itemAmount"`
+		ShippingFee float32 `json:"shippingFee"`
+		DiscountAmount float32 `json:"discountAmount"`
+		Currency string `json:"currency"`
+		BuyerId string `json:"buyerId"`
+		ReceiverName string `json:"receiverName"`
+		ReceiverPhone string `json:"receiverPhone"`
+		ReceiverAddress string `json:"receiverAddress"`
+		OrderCreatedAt int64 `json:"orderCreatedAt"`
+		PaidAt int64 `json:"paidAt"`
+		ShipDeadlineAt int64 `json:"shipDeadlineAt"`
+		ShippedAt int64 `json:"shippedAt"`
+		CompletedAt int64 `json:"completedAt"`
+		CancelledAt int64 `json:"cancelledAt"`
+		LastStatusChangeAt int64 `json:"lastStatusChangeAt"`
+		CancelReason string `json:"cancelReason"`
+		ReturnSn string `json:"returnSn"`
+		RefundStatus string `json:"refundStatus"`
+		RefundAmount float32 `json:"refundAmount"`
+		RefundReason string `json:"refundReason"`
+		ShippingCarrier string `json:"shippingCarrier"`
+		TrackingNo string `json:"trackingNo"`
+		ShippingStatus string `json:"shippingStatus"`
+		ExtRaw string `json:"extRaw"`
+	}
+)
+////////////////////////////////////////////
+type (
+	OrderRecordUnit {
+		Id int64 `json:"id,optional"`
+		OrderSn string `json:"orderSn"`
+		ShopId int64 `json:"shopId"`
+		Platform int64 `json:"platform"`
+		Status string `json:"status"`
+		SubStatus string `json:"subStatus"`
+		TotalAmount float32 `json:"totalAmount"`
+		ItemAmount float32 `json:"itemAmount"`
+		ShippingFee float32 `json:"shippingFee"`
+		DiscountAmount float32 `json:"discountAmount"`
+		Currency string `json:"currency"`
+		BuyerId string `json:"buyerId"`
+		ReceiverName string `json:"receiverName"`
+		ReceiverPhone string `json:"receiverPhone"`
+		ReceiverAddress string `json:"receiverAddress"`
+		OrderCreatedAt int64 `json:"orderCreatedAt"`
+		PaidAt int64 `json:"paidAt"`
+		ShipDeadlineAt int64 `json:"shipDeadlineAt"`
+		ShippedAt int64 `json:"shippedAt"`
+		CompletedAt int64 `json:"completedAt"`
+		CancelledAt int64 `json:"cancelledAt"`
+		LastStatusChangeAt int64 `json:"lastStatusChangeAt"`
+		CancelReason string `json:"cancelReason"`
+		ReturnSn string `json:"returnSn"`
+		RefundStatus string `json:"refundStatus"`
+		RefundAmount float32 `json:"refundAmount"`
+		RefundReason string `json:"refundReason"`
+		ShippingCarrier string `json:"shippingCarrier"`
+		TrackingNo string `json:"trackingNo"`
+		ShippingStatus string `json:"shippingStatus"`
+		ExtRaw string `json:"extRaw"`
+	}
+)
+////////////////////////////////////////////
+type (
+	OrderSrcUnit {
+		Id int64 `json:"id,optional"`
+		OrderSn string `json:"orderSn"`
+		ShopId int64 `json:"shopId"`
+		Platform int64 `json:"platform"`
+		Status string `json:"status"`
+		SubStatus string `json:"subStatus"`
+		TotalAmount float32 `json:"totalAmount"`
+		ItemAmount float32 `json:"itemAmount"`
+		ShippingFee float32 `json:"shippingFee"`
+		DiscountAmount float32 `json:"discountAmount"`
+		Currency string `json:"currency"`
+		BuyerId string `json:"buyerId"`
+		ReceiverName string `json:"receiverName"`
+		ReceiverPhone string `json:"receiverPhone"`
+		ReceiverAddress string `json:"receiverAddress"`
+		OrderCreatedAt int64 `json:"orderCreatedAt"`
+		PaidAt int64 `json:"paidAt"`
+		ShipDeadlineAt int64 `json:"shipDeadlineAt"`
+		ShippedAt int64 `json:"shippedAt"`
+		CompletedAt int64 `json:"completedAt"`
+		CancelledAt int64 `json:"cancelledAt"`
+		LastStatusChangeAt int64 `json:"lastStatusChangeAt"`
+		CancelReason string `json:"cancelReason"`
+		ReturnSn string `json:"returnSn"`
+		RefundStatus string `json:"refundStatus"`
+		RefundAmount float32 `json:"refundAmount"`
+		RefundReason string `json:"refundReason"`
+		ShippingCarrier string `json:"shippingCarrier"`
+		TrackingNo string `json:"trackingNo"`
+		ShippingStatus string `json:"shippingStatus"`
+		ExtRaw string `json:"extRaw"`
+	}
+)
+////////////////////////////////////////////

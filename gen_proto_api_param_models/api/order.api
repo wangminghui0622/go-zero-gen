@@ -1,0 +1,50 @@
+import "common.api"
+
+type (
+	OrderAddReq {
+		OrderUnit
+	}
+	OrderAddResp {
+	}
+	OrderDeleteReq {
+		Id int64 `json:"id"`
+	}
+	OrderDeleteResp {
+	}
+	OrderModifyReq {
+		OrderUnit
+	}
+	OrderModifyResp {
+	}
+	OrderQueryReq {
+		Id int64 `json:"id"`
+	}
+	OrderQueryResp {
+		OrderUnit
+	}
+)////////////////////////////////////////////
+@server (
+	prefix: v1/order
+	jwt: Auth
+	tags: order
+	group: order
+	middleware: TokenParseMiddleware, TokenRefreshMiddleware, TokenBlacklistMiddleware 
+)
+service zero {
+	@doc "orderAdd"
+	@handler orderAdd
+	post /add (OrderAddReq) returns (OrderAddResp)
+
+	@doc "orderDelete"
+	@handler orderDelete
+	post /delete (OrderDeleteReq) returns (OrderDeleteResp)
+
+	@doc "orderModify"
+	@handler orderModify
+	post /edit (OrderModifyReq) returns (OrderModifyResp)
+
+	@doc "orderQuery"
+	@handler orderQuery
+	post /query (OrderQueryReq) returns (OrderQueryResp)
+
+}

@@ -1,0 +1,33 @@
+syntax = 'proto3';
+option go_package="./zero";
+package pb;
+import "common.proto";
+
+message OrderRecordAddReq {
+		OrderRecordUnit orderRecordUnit = 1;
+}
+message OrderRecordAddResp {
+}
+message OrderRecordDeleteReq {
+		int64 id = 1;
+}
+message OrderRecordDeleteResp {
+}
+message OrderRecordModifyReq {
+		OrderRecordUnit orderRecordUnit = 1;
+}
+message OrderRecordModifyResp {
+}
+message OrderRecordQueryReq {
+		int64 id = 1;
+}
+message OrderRecordQueryResp {
+		OrderRecordUnit orderRecordUnit = 1;
+}
+
+service orderRecord{
+  rpc orderRecordAdd(OrderRecordAddReq) returns (OrderRecordAddResp);
+  rpc orderRecordDelete(OrderRecordDeleteReq) returns (OrderRecordDeleteResp);
+  rpc orderRecordModify(OrderRecordModifyReq) returns (OrderRecordModifyResp);
+  rpc orderRecordQuery(OrderRecordQueryReq) returns (OrderRecordQueryResp);
+}
